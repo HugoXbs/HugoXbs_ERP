@@ -1,0 +1,7 @@
+{
+	"navigators" : [
+		{"label" : "进货单录入", "refPannel" : ""},
+		{"label" : "库存查询", "refPannel" : ""},
+		{"label" : "销售统计", "refPannel" : ""}
+	]
+}

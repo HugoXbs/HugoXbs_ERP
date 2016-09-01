@@ -1,0 +1,166 @@
+{
+	"tables" : [
+		{
+			"pannelId" : "importInfoPannel",
+			"description" : "进货明细",
+			"tableHeadings" : [
+				{
+					"columnName" : "CPkId",
+					"label" : "系统编号",
+					"type" : "INPUT"
+				},{
+					"columnName" : "CImportOrderNo",
+					"label" : "进货单编号",
+					"type" : "INPUT"
+				},{
+					"columnName" : "CCustomer",
+					"label" : "客户厂商",
+					"type" : "INPUT"
+				},{
+					"columnName" : "CItemName",
+					"label" : "货物名称",
+					"type" : "INPUT"
+				},{
+					"columnName" : "NItemCount",
+					"label" : "进货数量",
+					"type" : "INPUT"
+				},{
+					"columnName" : "CItemUnit",
+					"label" : "货物单位",
+					"type" : "INPUT"
+				},{
+					"columnName" : "NSinglePrice",
+					"label" : "进货单价",
+					"type" : "INPUT"
+				},{
+					"columnName" : "NTotalPrice",
+					"label" : "总价",
+					"type" : "INPUT"
+				},{
+					"columnName" : "TImportDate",
+					"label" : "进货时间",
+					"type" : "DATE"
+				},{
+					"columnName" : "COperName",
+					"label" : "经手人",
+					"type" : "INPUT"
+				},{
+					"columnName" : "CRemark",
+					"label" : "备注",
+					"type" : "INPUT"
+				}
+			],
+			"rowOperating" : [
+				{
+					"buttonLabel" : "修改",
+					"buttonIcon" : "pencil",
+					"buttonClass" : "primary",
+					"buttonClick" : "editImportOrder"
+				}
+			],
+			"queryConditions" : [
+				{
+					"columnName" : "CImportOrderNo",
+					"defaultValue" : "",
+					"isNullable" : false
+				},{
+					"columnName" : "CCustomer",
+					"defaultValue" : "",
+					"isNullable" : false
+				},{
+					"columnName" : "CItemName",
+					"defaultValue" : "",
+					"isNullable" : false
+				},{
+					"columnName" : "TImportDate",
+					"defaultValue" : "",
+					"isNullable" : false
+				}
+			]
+		},
+		
+		{
+			"pannelId" : "stockInfoPannel",
+			"description" : "库存明细",
+			"tableHeadings" : [
+				{
+					"columnName" : "CPkId",
+					"label" : "系统编号",
+					"type" : "INPUT"
+				},{
+					"columnName" : "CCustomer",
+					"label" : "客户厂商",
+					"type" : "INPUT"
+				},{
+					"columnName" : "CItemName",
+					"label" : "货物名称",
+					"type" : "INPUT"
+				},{
+					"columnName" : "NItemCount",
+					"label" : "库存数量",
+					"type" : "INPUT"
+				},{
+					"columnName" : "CItemUnit",
+					"label" : "单位",
+					"type" : "INPUT"
+				},{
+					"columnName" : "CRemark",
+					"label" : "备注",
+					"type" : "INPUT"
+				}
+			]
+		},
+		
+		{
+			"pannelId" : "sellingPannel",
+			"description" : "出货明细",
+			"tableHeadings" : [
+				{
+					"columnName" : "CPkId",
+					"label" : "系统编号",
+					"type" : "INPUT"
+				},{
+					"columnName" : "CSellingOrderNo",
+					"label" : "出货单号",
+					"type" : "INPUT"
+				},{
+					"columnName" : "CCustomer",
+					"label" : "客户厂商",
+					"type" : "INPUT"
+				},{
+					"columnName" : "CItemName",
+					"label" : "货物名称",
+					"type" : "INPUT"
+				},{
+					"columnName" : "NItemCount",
+					"label" : "出货数量",
+					"type" : "INPUT"
+				},{
+					"columnName" : "CItemUnit",
+					"label" : "货物单位",
+					"type" : "INPUT"
+				},{
+					"columnName" : "NSinglePrice",
+					"label" : "出货单价",
+					"type" : "INPUT"
+				},{
+					"columnName" : "NTotalPrice",
+					"label" : "总价",
+					"type" : "INPUT"
+				},{
+					"columnName" : "TSellingDate",
+					"label" : "出货时间",
+					"type" : "Date"
+				},{
+					"columnName" : "COperName",
+					"label" : "经手人",
+					"type" : "INPUT"
+				},{
+					"columnName" : "CRemark",
+					"label" : "备注",
+					"type" : "INPUT"
+				}
+			]
+		}
+	]
+}

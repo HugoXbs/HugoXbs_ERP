@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>ERP</title>
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap/js/bootstrap.min.js"></script>
+		<link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet"></link>
+		<link href="css/custom.css" rel="stylesheet"></link>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div style="height:50px;padding-left:50px;line-height:50px">
+				<h1>ERP<small style="padding-left:20px">Test</small></h1>
+			</div>
+			<hr style="height:2px; background-color:darkcyan;width:95%"></hr>
+			<div class="row" ms-controller="_navigatorCtrl">
+				<div class="col-md-1"></div><!--占位-->
+				<div class="col-md-10">
+					<ul class="nav nav-tabs">
+						<li role="presentation" ms-for="($index,el) in @navigators" ms-class="el.isActive === true ? 'active' : ''" ms-click="@menuSelection($index)"><a href="#">{{el.label}}</a></li>
+					</ul>
+					<div class="panel panel-primary" ms-attr="{id:table.pannelId}">
+						<div class="panel-heading">{{@table.description}}</div>
+						<div class="panel-body">
+							<div class="container-fluid row">
+								<div class="col-md-12">
+									
+								</div>
+							<div>
+							<div class="container-fluid row">
+								<div class="col-md-12">
+									<table class="table table-bordered table-hover">
+										<thead>
+											<tr>
+												<td ms-for="headings in @table.tableHeadings">{{headings.label}}</td>
+											</tr>
+										</thead>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-1"></div><!--占位-->
+			</div>
+		</div>
+		
+		<script src="js/avalon.js"></script>
+		<script src="js/customer/init.js"></script>
+	</body>
+</html>
